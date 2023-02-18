@@ -1,0 +1,95 @@
+############################################################
+# +------------------------------------------------------+ #
+# |               Notes & Configurations                 | #
+# +------------------------------------------------------+ #
+############################################################
+
+#-----READ:-----
+#IMPORTANT: The parkour blocks will persist if the player who destroys them doesn't have permissions.
+#If they are deleted properly, a message will appear in the actionbar.
+#DISCLAIMER for code readers: The way I'm handling the regions is bad coding practice.
+#Scalability isn't important here, so it doesn't really matter, but generally don't hard-code the variables for each region.
+
+#-----PERMISSIONS-----:
+#celesteparkour.setblocks - Use /block1 and /block2
+#celesteparkour.interval - Use /parkourinterval
+#celesteparkour.disable - Use /parkourdisable
+#celesteparkour.enable - Use /parkourenable
+#celesteparkour.selectregion - Use /parkourregion
+#celesteparkour.warninterval - Use /parkourwarndelay
+#celesteparkour.general - Able to place and break parkour blocks
+
+
+#-----HOW TO USE-----:
+#Select a region using /parkourregion <1-5>. You can now place your blocks (defaults are aqua/red concrete).
+#Modify the block switch interval using /parkourinterval <ticks> and the block switch warning using /parkourwarndelay <ticks>.
+#Start/stop the block switching by using /parkourenable and /parkourdisable.
+#Make sure that when destroying/placing blocks a message confirming it appears in your actionbar, otherwise your permissions
+#are set up incorrectly or you do not have a region selected.
+#Deselect a region using /parkourregion 0 or switch to another one.
+
+
+#-----ARGUMENTS & CONFIGURATIONS-----:
+#Most of these can be modified in-game, and therefore it is not recommended to modify them here.
+#If you decide to modify them in this file, make sure to reload afterwards.
+
+#Enable or disable block switching. Modify using /parkourenable and /parkourdisable
+SwitchEnabledR1: false
+SwitchEnabledR2: false
+SwitchEnabledR3: false
+SwitchEnabledR4: false
+SwitchEnabledR5: false
+
+#Interval (in ticks) for switching the blocks. Modify using /parkourinterval. DEFAULT: 40
+SwitchIntervalR1: 40
+SwitchIntervalR2: 40
+SwitchIntervalR3: 40
+SwitchIntervalR4: 40
+SwitchIntervalR5: 40
+
+#Time (in ticks) to wait after the initial switch to switch to Block3.
+#Modify using /parkourwarndelay. Disable by setting to -1. DEFAULT: 30
+SwitchWarnDelayR1: 30
+SwitchWarnDelayR2: 30
+SwitchWarnDelayR3: 30
+SwitchWarnDelayR4: 30
+SwitchWarnDelayR5: 30
+
+#For Block1 and Block2, see https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html for full list of block types.
+#Block1's length must be equal to Block2's length. Each block type is equal to its respective block.
+#For example, for the DEFAULT VALUES:
+#Block1:
+#  - 'LIGHT_BLUE_CONCRETE'
+#  - 'SMOOTH_QUARTZ'
+#Block2:
+#  - 'RED_CONCRETE'
+#  - 'POLISHED_BLACKSTONE'
+#LIGHT_BLUE_CONCRETE is equal to RED_CONCRETE and SMOOTH_QUARTZ is equal to POLISHED_BLACKSTONE.
+
+#Block type for the blocks that are safe to stand on. Modify using /block1.
+Block1:
+  - 'LIGHT_BLUE_CONCRETE'
+  - 'SMOOTH_QUARTZ'
+
+#Block type for the "ghost" block. Modify using /block2.
+Block2:
+ - 'RED_CONCRETE'
+ - 'POLISHED_BLACKSTONE'
+
+#The "in between" block used to warn the players that the block is about to change.
+Block3: 'YELLOW_STAINED_GLASS'
+
+#Locations for parkour blocks. Modify in-game by placing the associated blocks.
+Block1LocationsR1: {}
+Block2LocationsR1: {}
+Block1LocationsR2: {}
+Block2LocationsR2: {}
+Block1LocationsR3: {}
+Block2LocationsR3: {}
+Block1LocationsR4: {}
+Block2LocationsR4: {}
+Block1LocationsR5: {}
+Block2LocationsR5: {}
+
+#The world name where the parkour course is in
+WorldName: world
