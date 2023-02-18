@@ -10,4 +10,14 @@ Start/stop the block switching by using /parkourenable and /parkourdisable.
 Make sure that when destroying/placing blocks a message confirming it appears in your actionbar, otherwise your permissionsare set up incorrectly or you do not have a region selected.
 Deselect a region using /parkourregion 0 or switch to another one.
 
+PERMISSIONS:
+celesteparkour.setblocks - Use /block1 and /block2
+celesteparkour.interval - Use /parkourinterval
+celesteparkour.disable - Use /parkourdisable
+celesteparkour.enable - Use /parkourenable
+celesteparkour.selectregion - Use /parkourregion
+celesteparkour.warninterval - Use /parkourwarndelay
+celesteparkour.general - Able to place and break parkour blocks
+
+
 Full notes & instructions are in the config.yml file.
