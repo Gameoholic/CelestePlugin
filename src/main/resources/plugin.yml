@@ -18,14 +18,14 @@ commands:
     description: Sets the time in ticks to wait before switching to the warning block. Prints current interval if no interval was provided.
     usage: /parkourwarndelay or /parkourwarndelay <interval>
   block1:
-    description: Sets the first building block of the parkour course. Leave empty to view
-    usage: /block1 <block_type>
+    description: Sets the first building blocks of the parkour course. Leave empty to view
+    usage: /block1 <block types separated with spaces>
   block2:
-    description: Sets the second building block of the parkour course. Leave empty to view
-    usage: /block2 <block_type>
+    description: Sets the second building blocks of the parkour course. Leave empty to view
+    usage: /block2 <block types separated with spaces>
   block3:
     description: Sets the warning building block of the parkour course. Leave empty to view
-    usage: /block3 <block_type>
+    usage: /block3 <block type>
   parkourregion:
     description: Start editing a parkour region. Leave empty to view current region, 0 to cancel.
     usage: /parkourregion
