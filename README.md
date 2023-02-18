@@ -14,11 +14,17 @@ Deselect a region using /parkourregion 0 or switch to another one.
 PERMISSIONS:
 
 celesteparkour.setblocks - Use /block1 and /block2
+
 celesteparkour.interval - Use /parkourinterval
+
 celesteparkour.disable - Use /parkourdisable
+
 celesteparkour.enable - Use /parkourenable
+
 celesteparkour.selectregion - Use /parkourregion
+
 celesteparkour.warninterval - Use /parkourwarndelay
+
 celesteparkour.general - Able to place and break parkour blocks
 
 
